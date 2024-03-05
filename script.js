@@ -43,7 +43,7 @@ let pikachu = {
 
 let possiblePokemon = [arcanine, gastly, jolteon, magikarp, pikachu];
 let randomPokemon;
-pokemonHTML = "";
+let pokemonHTML = "";
 let app = document.getElementById("app");
 
 // view
@@ -76,8 +76,6 @@ function updateView() {
     `;
 }
 
-
-//Controll
 function caughtPokemonView() {
     app.innerHTML = /*HTML*/`
     <div class="caughtContainer">
@@ -88,9 +86,9 @@ function caughtPokemonView() {
         </div>
     </div>
     `;
-
 }
 
+//Controll
 
 function getARandomPokemon() {
     let randomNumber = Math.floor(Math.random() * possiblePokemon.length);
