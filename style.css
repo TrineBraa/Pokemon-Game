@@ -49,6 +49,8 @@ img{
     row-gap: 15px;
     overflow: scroll;
     overflow-x: hidden;
+    background-color: rgb(53, 98, 100);
+    padding: 10px;
 }
 
 .pokemonBox {
