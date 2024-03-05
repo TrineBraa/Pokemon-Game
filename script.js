@@ -54,15 +54,15 @@ function updateView() {
     <div class="container">
         <div class="topContainer">
             <div class="Pokemon">
-                <div>${randomPokemon.name}</div>
-                <div>${randomPokemon.level}</div>
+                <div class="names">${randomPokemon.name}</div>
+                <div class="levelInfo">Level: ${randomPokemon.level}</div>
                 <img src="${randomPokemon.image}">
             </div>
         </div>
     
         <div class="lowerContainer">
             <div class="player">
-                <div>${player.name}</div>
+                <div class="names">${player.name}</div>
                 <img src="${player.image}">
             </div>
         </div>

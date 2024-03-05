@@ -30,10 +30,26 @@ img{
     margin-right: 50%;
 }
 
+.names{
+    border: solid black 1px;
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.levelInfo{
+    text-align: center;
+    font-size: medium;
+}
+
 .buttonToPress {
     height: 30px;
-    width: 150px;
-    
+    width: 200px;
+    border: none;
+    background-color: blanchedalmond;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
 }
 
 .player{
