@@ -30,8 +30,10 @@ img{
     margin-right: 50%;
 }
 
-.buttonContainer{
-    display: flex;
+.buttonToPress {
+    height: 30px;
+    width: 150px;
+    
 }
 
 .player{
@@ -39,8 +41,22 @@ img{
 }
 
 #containerCaughtPokemon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    border-radius: 30px;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 300px 300px 300px;
+    column-gap: 10px;
+    row-gap: 15px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.pokemonBox {
+    border: solid black 1px;
+    padding: 5px;
+    border-radius: 30px;
+    height: 190px;
+    background-color: lightgrey ;
+    box-shadow: inset 0 0 10px black;
+    
 }

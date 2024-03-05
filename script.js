@@ -68,9 +68,9 @@ function updateView() {
         </div>
 
         <div class="buttonContainer">
-            <button onclick="catchAPokemon()">Catch Pokemon</button>
-            <button onclick="updateView()">Find another</button>
-            <button onclick="showPokemon()">Look at your Pokemon</button>
+            <button class="buttonToPress" onclick="catchAPokemon()">Catch Pokemon</button>
+            <button class="buttonToPress" onclick="updateView()">Find another</button>
+            <button class="buttonToPress" onclick="showPokemon()">Look at your Pokemon</button>
         </div>
     </div>
     `;
@@ -81,8 +81,8 @@ function caughtPokemonView() {
     <div class="caughtContainer">
     <h1>You caught ${player.playerPokemon[player.playerPokemon.length - 1].name}</h1>
         <div class="buttonContainer">
-            <button onclick="updateView()">Find another</button>
-            <button onclick="showPokemon()">Look at your Pokemon</button>
+            <button class="buttonToPress" onclick="updateView()">Find another</button>
+            <button class="buttonToPress" onclick="showPokemon()">Look at your Pokemon</button>
         </div>
     </div>
     `;
@@ -108,7 +108,7 @@ function showPokemon() {
         <h2>Your Party:</h2>
         <div id="containerCaughtPokemon">${pokemonHTML}</div>
         <br />
-        <button onclick="updateView()">Find another</button>
+        <button class="buttonToPress" onclick="updateView()">Find another</button>
     </div>
         `;
 }
@@ -118,8 +118,8 @@ function showCaughtPokemon() {
     for (let i = 0; i < player.playerPokemon.length; i++) {
         pokemonHTML +=  /*HTML*/`
         <div class="pokemonBox">
-            <div>${player.playerPokemon[i].name} Lvl: ${player.playerPokemon[i].level} HP: ${player.playerPokemon[i].health}</div>
-            <img class="partyImg" src="${player.playerPokemon[i].image}"/>
+            <div id="partyCard">${player.playerPokemon[i].name} Lvl: ${player.playerPokemon[i].level} HP: ${player.playerPokemon[i].health}
+            <img class="partyImg" src="${player.playerPokemon[i].image}"/></div>
         </div>
         `;
     }
